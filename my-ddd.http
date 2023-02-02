@@ -1,0 +1,26 @@
+### 用户相关
+### 查询用户
+GET http://localhost:8080/api/user?userId=xxx
+Accept: application/json
+
+
+### 删除用户
+POST http://localhost:8080/api/user/delete?userId=xxx
+Accept: application/json
+
+
+### 保存用户
+POST http://localhost:8080/api/user/save
+Accept: application/json
+
+{"userName":"my","realName":"my","phone":16888888888,"password":"***","unitId":1,"province":"湖北省","city":"武汉市","county":"洪山区","roles":[{"roleId":2}]}
+
+
+### 更新用户
+POST http://localhost:8080/api/user/update
+Accept: application/json
+
+{"userId":1,"userName":"my","realName":"my","phone":16888888888,"roles":[{"roleId":2}]}
+
+
+###
